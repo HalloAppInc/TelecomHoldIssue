@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_place_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_field"
+        app:layout_constraintLeft_toLeftOf="@id/text_field"
+        app:layout_constraintRight_toRightOf="@id/text_field"
+        android:text="Place call"/>
+
+    <Button
+        android:id="@+id/button_end_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/button_place_call"
+        app:layout_constraintLeft_toLeftOf="@id/button_place_call"
+        app:layout_constraintRight_toRightOf="@id/button_place_call"
+        android:text="End Call"/>
+
+    <Button
+        android:id="@+id/button_answer_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/button_end_call"
+        app:layout_constraintLeft_toLeftOf="@id/button_end_call"
+        app:layout_constraintRight_toRightOf="@id/button_end_call"
+        android:text="Answer Call"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
